@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — MeurahmahN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Aurora Background -->
+  <div class="aurora-bg">
+    <div class="aurora-layer aurora-1"></div>
+    <div class="aurora-layer aurora-2"></div>
+    <div class="aurora-layer aurora-3"></div>
+    <div class="aurora-layer aurora-4"></div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MER<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#biodata" class="nav-link" data-section="biodata">Biodata</a></li>
+      <li><a href="#techstack" class="nav-link" data-section="techstack">Tech Stack</a></li>
+      <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-nav">Say Hello ✦</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#biodata" class="mob-link">Biodata</a></li>
+      <li><a href="#techstack" class="mob-link">Tech Stack</a></li>
+      <li><a href="#gallery" class="mob-link">Gallery</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HOME ─── -->
+  <section class="section" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-orb orb-4"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span> Available for Projects
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        Hi, I'm <br/>
+        <span class="name-highlight">Meurah!</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Welcome to my portfolio — showcasing my journey, skills, and passion.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#biodata" class="btn-primary">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Tech Stack</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Creativity</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">💻</span>
+          <span class="stat-label">Full Stack</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right delay-2">
+      <div class="hero-img-frame">
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+        <div class="hero-img-placeholder">
+          <img src="foto2.jpeg" alt="Profile"/>
+        </div>
+      </div>
+      <div class="hero-floating-card fc-1">
+        <i class="fa-solid fa-code"></i> Code &amp; Create
+      </div>
+      <div class="hero-floating-card fc-2">
+        <i class="fa-solid fa-star"></i> Creative Dev
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── BIODATA ─── -->
+  <section class="section" id="biodata">
+    <div class="section-header reveal-up">
+      <p class="section-tag">// 01. About</p>
+      <h2 class="section-title">Biodata <span class="accent">.</span></h2>
+    </div>
+
+    <div class="bio-grid">
+      <div class="bio-photo-col reveal-left">
+        <div class="bio-photo-frame">
+          <div class="photo-glow"></div>
+          <div class="bio-photo-placeholder">
+            <img src="foto1.jpeg">
+          </div>
+          <div class="photo-badge">
+            <i class="fa-solid fa-map-pin"></i> Aceh, ID
+          </div>
+        </div>
+      </div>
+
+      <div class="bio-info-col reveal-right">
+        <div class="bio-intro">
+          <p>Perkenalkan, aku Meurah, aku adalah mahasiswa informatika yang suka belajar hal baru, terutama di dunia teknologi dan desain.</p>
+        </div>
+
+        <div class="bio-cards">
+          <div class="bio-card">
+            <div class="bio-card-icon"><i class="fa-solid fa-user-tag"></i></div>
+            <div class="bio-card-info">
+              <span class="bio-label">Nama Lengkap</span>
+              <span class="bio-value">Meurahmah Nushsharie</span>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="bio-card-icon"><i class="fa-solid fa-at"></i></div>
+            <div class="bio-card-info">
+              <span class="bio-label">Nama Panggilan</span>
+              <span class="bio-value">Meurah</span>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="bio-card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+            <div class="bio-card-info">
+              <span class="bio-label">Tempat, Tgl Lahir</span>
+              <span class="bio-value">Banda Aceh, Juni 2006</span>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="bio-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="bio-card-info">
+              <span class="bio-label">Alamat</span>
+              <span class="bio-value">Aceh, Indonesia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-tags">
+          <span class="tag">🎨 UI/UX Enthusiast</span>
+          <span class="tag">💡 Problem Solver</span>
+          <span class="tag">🚀 Fast Learner</span>
+          <span class="tag">🎵 Music Lover</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TECH STACK ─── -->
+  <section class="section" id="techstack">
+    <div class="section-header reveal-up">
+      <p class="section-tag">// 02. Skills</p>
+      <h2 class="section-title">Tech Stack <span class="accent">.</span></h2>
+    </div>
+    <p class="section-desc reveal-up delay-1">Teknologi yang aku gunakan untuk membangun proyek-proyek keren.</p>
+
+    <div class="tech-grid">
+      <!-- HTML -->
+      <div class="tech-card reveal-up delay-1" data-tech="HTML5">
+        <div class="tech-card-inner">
+          <div class="tech-front">
+            <div class="tech-icon-wrap" style="--clr:#e34c26">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 3l2.2 24.6L16 30l8.8-2.4L27 3H5zm18.4 6.8H11.6l.3 3.4h11.2l-1 10.4-6.1 1.7-6.1-1.7-.4-4.6h3.3l.2 2.3 3 .8 3-.8.3-3.8H10.3L9.4 9.8h13.3l-.3.8v-.8z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>HTML5</h3>
+            <p>Markup Language</p>
+          </div>
+          <div class="tech-back" style="--clr:#e34c26">
+            <h3>HTML5</h3>
+            <p>Struktur fondasi dari setiap halaman web yang aku bangun.</p>
+            <div class="tech-skill-bar">
+              <div class="tech-skill-fill" style="width: 70%"></div>
+            </div>
+            <span class="tech-level">Advanced — 70%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="tech-card reveal-up delay-2" data-tech="CSS3">
+        <div class="tech-card-inner">
+          <div class="tech-front">
+            <div class="tech-icon-wrap" style="--clr:#264de4">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 3l2.2 24.6L16 30l8.8-2.4L27 3H5zm13.4 19.8-3.4.9-3.4-.9-.2-2.7H8.9l.5 5.3 6.6 1.8 6.6-1.8.5-5.3H20l-.6 2.7zm.8-7.8-.3 2.8H13l-.2-2.8H11l.6 6 4.4 1.2 4.4-1.2.6-6h-1.4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>CSS3</h3>
+            <p>Styling Language</p>
+          </div>
+          <div class="tech-back" style="--clr:#264de4">
+            <h3>CSS3</h3>
+            <p>Animasi, layout, dan desain visual yang memukau.</p>
+            <div class="tech-skill-bar">
+              <div class="tech-skill-fill" style="width:75%"></div>
+            </div>
+            <span class="tech-level">Advanced — 75%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="tech-card reveal-up delay-3" data-tech="JavaScript">
+        <div class="tech-card-inner">
+          <div class="tech-front">
+            <div class="tech-icon-wrap" style="--clr:#f7df1e">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="2" fill="currentColor" fill-opacity=".15"/>
+                <path d="M19 22.4c.5.8 1.1 1.4 2.3 1.4 1 0 1.6-.5 1.6-1.1 0-.8-.6-1.1-1.7-1.5l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.5 0-1.7 1.3-3 3.4-3 1.5 0 2.5.5 3.3 1.8l-1.8 1.1c-.4-.7-.8-1-1.5-1-.7 0-1.1.4-1.1 1 0 .7.4 1 1.5 1.4l.6.3c2 .9 3.1 1.7 3.1 3.7 0 2.1-1.7 3.2-3.9 3.2-2.2 0-3.6-1-4.3-2.4L19 22.4zm-8.4.2c.4.7.7 1.2 1.5 1.2.8 0 1.2-.3 1.2-1.4V16h2.2v6.4c0 2.4-1.4 3.4-3.4 3.4-1.8 0-2.9-1-3.4-2.1l1.9-1.1z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Programming Language</p>
+          </div>
+          <div class="tech-back" style="--clr:#f7df1e">
+            <h3>JavaScript</h3>
+            <p>Interaktivitas dan logika di balik setiap pengalaman web.</p>
+            <div class="tech-skill-bar">
+              <div class="tech-skill-fill" style="width:65%"></div>
+            </div>
+            <span class="tech-level">Intermediate — 65%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="tech-card reveal-up delay-4" data-tech="MySQL">
+        <div class="tech-card-inner">
+          <div class="tech-front">
+            <div class="tech-icon-wrap" style="--clr:#4479a1">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4C9 4 4 7.6 4 12s5 8 12 8 12-3.6 12-8-5-8-12-8z" fill="currentColor" fill-opacity=".3"/>
+                <ellipse cx="16" cy="12" rx="12" ry="5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 12v4c0 2.8 5.4 5 12 5s12-2.2 12-5v-4" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 16v4c0 2.8 5.4 5 12 5s12-2.2 12-5v-4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>MySQL</h3>
+            <p>Database</p>
+          </div>
+          <div class="tech-back" style="--clr:#4479a1">
+            <h3>MySQL</h3>
+            <p>Manajemen database relasional untuk menyimpan dan mengelola data.</p>
+            <div class="tech-skill-bar">
+              <div class="tech-skill-fill" style="width:85%"></div>
+            </div>
+            <span class="tech-level">Intermediate — 85%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oracle -->
+      <div class="tech-card reveal-up delay-5" data-tech="Oracle">
+        <div class="tech-card-inner">
+          <div class="tech-front">
+            <div class="tech-icon-wrap" style="--clr:#f80000">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="11" width="26" height="10" rx="5" stroke="currentColor" stroke-width="2"/>
+                <text x="16" y="19" text-anchor="middle" fill="currentColor" font-size="7" font-weight="bold" font-family="sans-serif">ORA</text>
+              </svg>
+            </div>
+            <h3>Oracle</h3>
+            <p>Enterprise Database</p>
+          </div>
+          <div class="tech-back" style="--clr:#f80000">
+            <h3>Oracle DB</h3>
+            <p>Database enterprise untuk sistem skala besar dan kompleks.</p>
+            <div class="tech-skill-bar">
+              <div class="tech-skill-fill" style="width:70%"></div>
+            </div>
+            <span class="tech-level">Intermediate — 70%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section class="section" id="gallery">
+    <div class="section-header reveal-up">
+      <p class="section-tag">// 03. Moments</p>
+      <h2 class="section-title">Gallery <span class="accent">.</span></h2>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player reveal-up delay-1">
+      <div class="music-disc" id="musicDisc">
+        <div class="disc-inner">🎵</div>
+      </div>
+      <div class="music-info">
+        <div class="music-now">Now Playing</div>
+        <div class="music-title" id="musicTitle">— Select a Track —</div>
+        <div class="music-artist" id="musicArtist">Choose below</div>
+        <div class="music-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="music-time">
+            <span id="currentTime">0:00</span>
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+        <div class="music-controls">
+          <button class="music-btn" id="prevBtn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+          <button class="music-btn play-btn" id="playBtn" title="Play/Pause"><i class="fa-solid fa-play" id="playIcon"></i></button>
+          <button class="music-btn" id="nextBtn" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+          <button class="music-btn" id="muteBtn" title="Mute"><i class="fa-solid fa-volume-high" id="volumeIcon"></i></button>
+        </div>
+        <div class="music-playlist">
+          <div class="playlist-item active" data-src="Soch Na Sake.mp3" data-title="Soch Na Sake" data-artist="Arijit Singh">
+            <i class="fa-solid fa-music"></i>
+            <div class="pl-info"><span class="pl-title">Soch Na Sake</span><span class="pl-artist">Arijit Singh</span></div>
+            <i class="fa-solid fa-play pl-play"></i>
+          </div>
+          <div class="playlist-item" data-src="Samjhawan.mp3" data-title="Samjhawan" data-artist="Arijit Singh">
+            <i class="fa-solid fa-music"></i>
+            <div class="pl-info"><span class="pl-title">Samjhawan</span><span class="pl-artist">Arijit Singh</span></div>
+            <i class="fa-solid fa-play pl-play"></i>
+          </div>
+          <div class="playlist-item" data-src="Thank u, next.mp3" data-title="Thank U, Next" data-artist="Ariana Grande">
+            <i class="fa-solid fa-music"></i>
+            <div class="pl-info"><span class="pl-title">Thank U, Next</span><span class="pl-artist">Ariana Grande</span></div>
+            <i class="fa-solid fa-play pl-play"></i>
+          </div>
+          <div class="playlist-item" data-src="Almost is never enough.mp3" data-title="Almost is Never Enough" data-artist="Ariana Grande">
+            <i class="fa-solid fa-music"></i>
+            <div class="pl-info"><span class="pl-title">Almost is Never Enough</span><span class="pl-artist">Ariana Grande</span></div>
+            <i class="fa-solid fa-play pl-play"></i>
+          </div>
+        </div>
+      </div>
+      <audio id="audioPlayer"></audio>
+    </div>
+
+    <!-- Gallery Slider -->
+    <div class="gallery-section reveal-up delay-2">
+      <h3 class="gallery-sub">📸 Photo Gallery</h3>
+      <div class="gallery-slider-wrap">
+        <button class="gallery-nav prev" id="galleryPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="gallery-slider" id="gallerySlider">
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto3.jpeg" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 01 ✦</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto4.jpeg" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 02 ✦</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto5.jpg" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 03 ✦</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto8.png" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 04 ✦</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto9.PNG" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 05 ✦</span></div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gallery-img-wrap">
+                <img src="foto10.jpg" alt="Foto 1" class="gallery-img" />
+              </div>
+              <div class="gallery-overlay"><span>Memory 06 ✦</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="gallery-nav next" id="galleryNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <button class="lightbox-nav lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox-nav lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="section-header reveal-up">
+      <p class="section-tag">// 04. Reach Out</p>
+      <h2 class="section-title">Contact <span class="accent">.</span></h2>
+    </div>
+    <p class="section-desc reveal-up delay-1">Jangan ragu untuk menghubungi akuu. I'd love to hear from you! 💌</p>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal-up delay-1" onclick="copyEmail()">
+        <div class="contact-icon-wrap" style="--clr:#ea4335">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">meurahmah27@gmail.com</span>
+        </div>
+        <div class="contact-action"><i class="fa-solid fa-copy"></i> Copy</div>
+        <div class="contact-glow" style="--clr:#ea4335"></div>
+      </div>
+
+      <a class="contact-card reveal-up delay-2" href="https://www.instagram.com/meurahnsh_/" target="_blank" rel="noopener">
+        <div class="contact-icon-wrap" style="--clr:#e1306c">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@meurahnsh_</span>
+        </div>
+        <div class="contact-action"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit</div>
+        <div class="contact-glow" style="--clr:#e1306c"></div>
+      </a>
+
+      <a class="contact-card reveal-up delay-3" href="https://www.tiktok.com/@hotteamo_" target="_blank" rel="noopener">
+        <div class="contact-icon-wrap" style="--clr:#69c9d0">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">TikTok</span>
+          <span class="contact-value">@hotteamo_</span>
+        </div>
+        <div class="contact-action"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit</div>
+        <div class="contact-glow" style="--clr:#69c9d0"></div>
+      </a>
+    </div>
+
+    <div class="contact-cta reveal-up delay-4">
+      <p>Small progress is <span class="accent-text">still</span> progress ✦</p>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>MER<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Meurahmah — Crafted with <span style="color:#ff6b6b">♥</span> &amp; lots of ☕</p>
+      <p class="footer-sub">Made with HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Welcome Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="popup-icon">✨</div>
+      <h3 class="popup-title">Hey, Welcome!</h3>
+      <p class="popup-text">Senang kamu mengunjungi portfolio saya. Semoga kamu menikmati perjalanannya! 🚀</p>
+      <button class="popup-btn" id="popupBtn">Let's Explore!</button>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
